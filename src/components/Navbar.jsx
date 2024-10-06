@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-rose-300 text-white dark:bg-zinc-900 dark:text-white">
+      <div className="navbar bg-violet-400 text-white dark:bg-zinc-900 dark:text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -63,7 +63,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">LOVE U PUTRI</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

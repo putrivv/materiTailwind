@@ -47,7 +47,7 @@ const BerandaView = ({ gantiSearch, dataSearch, hasilCari, hasilFilter }) => {
 </div></h2> 
                 <p className="line-clamp-3">{data.description}</p>
                 <div className="card-actions justify-end">
-                  <Link to={"/detail/" + data.id} className="btn btn-default-active bg-rose-300 dark:bg-zinc-900 text-white">
+                  <Link to={"/detail/" + data.id} className="btn btn-default-active bg-violet-600 dark:bg-zinc-900 text-white">
                     Show
                   </Link>
                 </div>

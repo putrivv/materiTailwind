@@ -4,7 +4,7 @@ const NegaraView = ({ ubahCari, cariNegara, hasilCari, hasilFilter }) => {
   return (
     <div>
       <div className="flex flex-col">
-        <div className="min-h-screen bg-amber-100 dark:bg-slate-500">
+        <div className="min-h-screen bg-blue-200 dark:bg-slate-500">
           <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-12 justify-center w-full max-w-md ">
             <label className="input input-bordered flex items-center gap-2 bg-rose-100 dark:bg-slate-200">
               <input
@@ -40,7 +40,7 @@ const NegaraView = ({ ubahCari, cariNegara, hasilCari, hasilFilter }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-12">
               {hasilFilter?.map((data) => (
                 <div
-                  className="product-card card bg-green-300 dark:bg-slate-700 text-white card-compact bg-base-100 w-96 shadow-xl"
+                  className="product-card card bg-indigo-300 dark:bg-slate-700 text-white card-compact bg-base-100 w-96 shadow-xl"
                   key={data?.name}
                 >
                   <figure>
@@ -53,7 +53,7 @@ const NegaraView = ({ ubahCari, cariNegara, hasilCari, hasilFilter }) => {
                     <div className="card-actions justify-end">
                       <Link
                         to={"/detailnegara/" + data.id}
-                        className="btn bg-rose-300 dark:bg-slate-400 text-black"
+                        className="btn bg-violet-600 dark:bg-slate-400 text-black"
                       >
                         Show
                       </Link>
