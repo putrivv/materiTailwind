@@ -32,7 +32,7 @@ export default function Detail() {
             <h1 className="text-6xl font-bold text-center">{resto?.restaurant?.name}</h1>
             <p className="py-6 max-w-[50rem]">{resto?.restaurant?.description}
             </p>
-            <Link to="/" className="btn btn-default-active bg-rose-300 dark:bg-zinc-900 text-white">
+            <Link to="/" className="btn btn-default-active bg-violet-600 dark:bg-zinc-900 text-white">
               Back
             </Link>
           </div>

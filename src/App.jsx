@@ -9,11 +9,11 @@ import Navbar from "./components/Navbar";
 import Error from "./pages/Error";
 import Footer from "./components/Footer";
 import Product from "./pages/Product/Product";
-import Detailp from "./pages/Detailp";
 import Detail from "./pages/Detail";
 import Negara from "./pages/Negara/Negara";
 import DetailNegara from "./pages/DetailNegara";
 import ThemeContext from "./context/ThemeContext";
+import ProductDetail from "./pages/productdetail/ProductDetail";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,7 +29,7 @@ function App() {
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="*" element={<Error />} />
           <Route path="/product" element={<Product />} />
-          <Route path="/detailp/:id" element={<Detailp />} />
+          <Route path="/detailproduct/:id" element={<ProductDetail />} />
           <Route path="/negara" element={<Negara />} />
           <Route path="/detailnegara/:id" element={<DetailNegara />} />
         </Routes>

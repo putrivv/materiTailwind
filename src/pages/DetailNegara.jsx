@@ -23,14 +23,14 @@ export default function Detail() {
     //   <img src={resto?.thumbnail} alt="" />
     //   <h1>{resto?.restaurant.name }</h1>
     // </div>
-    <div className="hero bg-base-200 min-h-screen  bg-amber-100 dark:bg-slate-500">
+    <div className="hero bg-base-200 min-h-screen  bg-blue-200 dark:bg-slate-500">
       <div className="hero-content text-center space-y-8 flex-col">
         <img src={negara?.flag} className="max-w-sm rounded-lg shadow-inner" />
         
         <div>
           <h1 className="text-5xl font-bold dark:text-white">{negara?.name}</h1>
           <p className="py-6 max-w-[50rem] text-center dark:text-white">{negara?.currency}</p>
-          <Link to="/negara" className="btn bg-red-400 dark:text-white dark:bg-slate-800">
+          <Link to="/negara" className="btn bg-violet-600 dark:text-white dark:bg-slate-800">
           <div className="rating gap-1">
           <input
             type="radio"
