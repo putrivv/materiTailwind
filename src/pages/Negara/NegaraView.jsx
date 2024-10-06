@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 const NegaraView = ({ ubahCari, cariNegara, hasilCari, hasilFilter }) => {
   return (
     <div>
-     
-      <div className="min-h-screen bg-slate-700">
-        <div className="flex flex-col">
-          <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-12 justify-center w-full max-w-md">
-            <label className="input input-bordered flex items-center gap-2">
+      <div className="flex flex-col">
+        <div className="min-h-screen bg-amber-100 dark:bg-slate-500">
+          <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-12 justify-center w-full max-w-md ">
+            <label className="input input-bordered flex items-center gap-2 bg-rose-100 dark:bg-slate-200">
               <input
                 type="text"
                 className="grow"
@@ -29,7 +28,7 @@ const NegaraView = ({ ubahCari, cariNegara, hasilCari, hasilFilter }) => {
               </svg>
             </label>
 
-            <div className="text-lg text-gray-400">
+            <div className="text-lg text-white">
               <p>
                 Hasil dari: {cariNegara}, ditemukan: {hasilCari?.founded}
               </p>
@@ -37,23 +36,24 @@ const NegaraView = ({ ubahCari, cariNegara, hasilCari, hasilFilter }) => {
           </div>
           {/* </div> */}
 
-          <div className="grid flex justify-center pt-12 bg-white-800">
+          <div className="grid flex justify-center pt-12 bg-white-800 ">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-12">
               {hasilFilter?.map((data) => (
                 <div
-                  className="product-card card card-compact bg-base-100 w-96 shadow-xl"
+                  className="product-card card bg-green-300 dark:bg-slate-700 text-white card-compact bg-base-100 w-96 shadow-xl"
                   key={data?.name}
                 >
                   <figure>
-                    <img src={data.flag} alt="data" />
+                    <img src={data.flag} alt="data" />                   
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title">{data.name}</h2>
+                    <h2 className="card-title">{data.name} <div className="rating">
+</div></h2>
                     <p className="line-clamp-3">{data.currency}</p>
                     <div className="card-actions justify-end">
                       <Link
                         to={"/detailnegara/" + data.id}
-                        className="btn bg-red-400 text-white"
+                        className="btn bg-rose-300 dark:bg-slate-400 text-black"
                       >
                         Show
                       </Link>

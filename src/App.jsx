@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Error from "./pages/Error";
 import Footer from "./components/Footer";
 import Product from "./pages/Product/Product";
+import Detailp from "./pages/Detailp";
 import Detail from "./pages/Detail";
 import Negara from "./pages/Negara/Negara";
 import DetailNegara from "./pages/DetailNegara";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="*" element={<Error />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/detailp/:id" element={<Detailp />} />
           <Route path="/negara" element={<Negara />} />
           <Route path="/detailnegara/:id" element={<DetailNegara />} />
         </Routes>

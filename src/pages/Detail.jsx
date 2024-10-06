@@ -22,19 +22,18 @@ export default function Detail() {
 
   return (
     <div>
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero bg-base-200 min-h-screen bg-blue-200 dark:bg-zinc-500 dark:text-white">
         <div className="hero-content text-center space-y-8 flex-col">
           <img
             src={`https://restaurant-api.dicoding.dev/images/large/${resto?.restaurant.pictureId}`}
-            className="max-w-sm rounded-lg shadow-2xl mt-10"
+            className="max-w-sm rounded-lg shadow-xl mt-10"
           />
           <div>
-            <h1 className="text-5xl font-bold">{resto?.restaurant?.name}</h1>
-            <p className="py-6 max-w-[50rem] text-justify">
-              {resto?.restaurant?.description}
+            <h1 className="text-6xl font-bold text-center">{resto?.restaurant?.name}</h1>
+            <p className="py-6 max-w-[50rem]">{resto?.restaurant?.description}
             </p>
-            <Link to="/" className="btn btn-primary  mb-10">
-              Kembali
+            <Link to="/" className="btn btn-default-active bg-rose-300 dark:bg-zinc-900 text-white">
+              Back
             </Link>
           </div>
         </div>
